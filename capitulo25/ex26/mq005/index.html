@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul> 
+                <!-- observe que no documento de estilo há uma sentença para a configuração dos indicativos de itens de listas -->
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt nulla quae rerum illum labore enim porro dolorem illo doloremque corporis harum quo hic, distinctio soluta in ex quos sapiente nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam officia quaerat. Sapiente neque esse velit saepe ea, nostrum iste, veritatis in corporis harum temporibus libero voluptatibus distinctio magni dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At maiores aliquid quaerat esse ut atque temporibus mollitia eius impedit earum? Vel repudiandae odio aut rem delectus eius iure nesciunt libero?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ut voluptatem sequi. Eaque ut in nulla, perspiciatis distinctio earum possimus officia temporibus dolore quas corrupti! Laborum sint voluptatibus amet aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, cupiditate voluptas. Dolores aut, in quas doloremque ab odit, laudantium vitae officiis odio, eius nesciunt rem. Illo error harum mollitia assumenda?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga neque debitis beatae aliquid accusamus rerum excepturi sit dolores facere saepe at id impedit tenetur pariatur, commodi esse nisi laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio esse id veniam suscipit est deleniti nulla reprehenderit ut, ratione amet sapiente possimus, omnis numquam iste nihil voluptates, quam distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cum laudantium, consequuntur consectetur non asperiores. Consequuntur quisquam eius deserunt quaerat doloremque sunt ipsam, nesciunt, aliquid doloribus, nisi voluptate dolorum recusandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda natus quidem earum ducimus soluta, tempore, adipisci consequatur odio quia repellendus, eligendi animi nostrum veniam iure illum fuga vel atque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, distinctio, voluptas nesciunt explicabo quidem pariatur quam quas nostrum est voluptatibus iure dicta quo reiciendis ipsam id praesentium fugiat, laboriosam nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam officia quaerat. Sapiente neque esse velit saepe ea, nostrum iste, veritatis in corporis harum temporibus libero voluptatibus distinctio magni dolorem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor dolorum rem iste quis unde id, delectus laboriosam. Assumenda, autem laborum consectetur maxime veniam omnis tempora mollitia sequi sit ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium molestias, provident obcaecati vero tempore cupiditate placeat dolores deserunt suscipit quos dignissimos sed est fuga facere ab voluptatibus consequuntur repudiandae laborum.</p>
+        </article>
+    </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            height: 350px;
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="1">
+            <a href="https://www.cursoemvideo.com" target="_blank">CursoEmVideo</a>
+        </iframe>
+        
+        para aprender a programar.
+    </p>
+    <p>
+        O repositório do Guanabara no Github 
+        
+        <iframe src="https://github.com/gustavoguanabara" frameborder="0" height="500px" width="500px">
+            <a href="https://github.com/gustavoguanabara" target="_blank">link para o repositório</a>
+        </iframe>
+
+        também é muito legal!
+    </p>
+    <!-- Alguns sites têm proteções contra iframes para que não sejam exibidos em sites de terceiros -->
+    <!-- O tamanho padrão de um iframe é de 300x150 pixels, 300px de largura e 150px de altura -->
+    <!-- Se houver alguma configuração de css interna ou externa  ela prevalecerá mesmo se houver alguma configuração dentro da própria tag de iframe. E se não houver nenhuama das duas opções de configuração de estilo, então o iframe seguirá o padrão de 300x150 px.-->
+</body>
+</html>
