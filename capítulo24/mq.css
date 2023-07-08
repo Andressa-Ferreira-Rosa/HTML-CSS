@@ -2,7 +2,8 @@
 
 @media screen and (max-width: 768px){
     *{
-        
+        padding: 0px;
+        margin: 0px;   
     }
     body{
         background-color: rgba(199, 199, 149, 0.644);
@@ -17,8 +18,6 @@
 
     main{
         width: 100vw;
-        padding: 0px;
-        margin: 0px;
         position: fixed;
     }
 }
